@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "yourturntodiemod",
+	"version": "${version}",
+	"name": "YTTD Mod",
+	"description": "This is a Mod made with the purpose of assisting RPGs based on the Visual Novel Your Turn To Die, with its most important features added as blocks, items and more.",
+	"authors": [
+		"Nany_a_Noob!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/yttd-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nany.yttdmod.YTTDMod"
+		],
+		"client": [
+			"com.nany.yttdmod.YTTDModClient"
+		],
+		"fabric-datagen": [
+			"com.nany.yttdmod.YTTDModDataGenerator"
+		]
+	},
+	"mixins": [
+		"yttd-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
